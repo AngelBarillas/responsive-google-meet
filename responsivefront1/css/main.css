@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #007af3;
+}
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 450;
+  margin: 0;
+}
+
+.subhead {
+  text-align: center;
+  font-weight: 295;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin: 0;
+}
+.hero {
+  margin: 0px;
+  padding: 40px;
+}
+.reunion-cta {
+  display: grid;
+  grid-template-columns: 30% 10% 1fr;
+  grid-template-rows: 0.5fr 1fr;
+}
+.new-reunion-cta-btn {
+  border-radius: 0.15rem;
+  font-style: bold;
+  font-size: xx-small;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  background: var(--primary-color);
+  color: white;
+}
+
+.join-reunion-field {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  font-size: x-small;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.join-reunion-btn {
+  grid-column: 3;
+  grid-row: 2;
+  margin-left: 0.7rem;
+  padding-top: 0.7rem;
+  font-size: xx-small;
+  color: lightgray;
+}
+
+.more-info-cta {
+  color: var(--primary-color);
+  font-style: bold;
+  font-size: 8px;
+}
+
+.reunion-list-container {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 3fr 0.5fr;
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px rgb(231, 228, 228);
+  margin-top: 15px;
+}
+
+.list-item-0 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  padding: 18px 10px 10px 10px;
+  border-bottom: 1px solid lightgray;
+  color: slategray;
+  font-size: xx-small;
+  font-weight: 200;
+}
+.list-item-1 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: x-small;
+  padding: 18px 10px 10px 10px;
+}
+
+.list-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  border-bottom: 1px solid lightgray;
+  grid-row: 2;
+  padding: 18px 10px 10px 10px;
+  color: slategray;
+  font-size: xx-small;
+  font-weight: 200;
+}
+
+.list-item-3 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: x-small;
+  padding: 18px 10px 10px 10px;
+}
+.list-item-4 {
+  grid-row: 1;
+  border-bottom: 1px solid lightgray;
+  grid-row: 3;
+  color: slategray;
+  font-size: xx-small;
+  font-weight: 200;
+  padding: 18px 10px 10px 10px;
+}
+
+.list-item-5 {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: x-small;
+  padding: 18px 10px 10px 10px;
+}
+.list-item-6 {
+  grid-column: 1;
+  grid-row: 4;
+  font-size: xx-small;
+  padding: 10px;
+}
+.list-item-7 {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: x-small;
+  padding: 10px;
+  padding-left: 25px;
+}
+.list-item-8 {
+  grid-column: 4;
+  grid-row: 4;
+  font-size: 7px;
+  padding: 10px;
+  padding-top: 13px;
+  color: whitesmoke;
+}
+.current-reunion {
+  display: grid;
+  grid-template: 1fr 4fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background: var(--primary-color);
+  color: white;
+  margin-bottom: 3px;
+  border-radius: 0.4rem;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-top: -4px;
+  padding: 10px;
+}
+.google-acc-container {
+  font-size: 7px;
+  font-weight: 295;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    margin-top: 20%;
+  }
+  .reunion-cta {
+    display: grid;
+    grid-template-columns: 30% 50% 1fr;
+    grid-template-rows: 1fr;
+  }
+  .join-reunion-field {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 1rem;
+  }
+  .join-reunion-btn {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .right-col {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+  .reunion-list-container {
+    grid-column: 2;
+    grid-row: 1;
+    height: 93%;
+  }
+  .more-info-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .google-acc-container {
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+}
